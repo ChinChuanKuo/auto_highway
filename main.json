@@ -1,0 +1,22 @@
+{
+    "info": {
+        "start_station": "台北",
+        "end_station": "新竹",
+        "//": "標準車廂 or 商務車廂",
+        "train_type": "標準車廂",
+        "//": "無 or 靠窗優先 or 走道優先",
+        "seat_like": "靠窗優先",
+        "//": "依時間 or 直接輸入",
+        "order_way": "依時間",
+        "go_back": "Yes",
+        "start_date": "2020/11/30",
+        "start_time": "00:00",
+        "end_date": "2020/12/05",
+        "end_time": "00:00",
+        "adult_count": "5",
+        "child_count": "1",
+        "lover_count": "2",
+        "old_count": "1",
+        "student_count": "1"
+    }
+}
