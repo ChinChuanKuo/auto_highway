@@ -65,8 +65,8 @@ def solution_website(json):
         if option.text == json_data["student_count"]:
             option.click()
             break
-    #dowload_file(driver.find_element_by_xpath("//img[@id='BookingS1Form_homeCaptcha_passCode']").get_attribute("src"), "/users/chinchuankuo/documents/python/auto_highway/coding/test.jpg")
-    sleep(10)
+    download_file(driver.find_element_by_xpath("//img[@id='BookingS1Form_homeCaptcha_passCode']").get_attribute("src"))
+    #driver.find_element_by_xpath("//img[@id='BookingS1Form_homeCaptcha_passCode']").get_attribute("src")
 
 def get_json():
     import json
@@ -74,10 +74,6 @@ def get_json():
         data = json.load(f)
         return data
 
-def dowload_file(website, savePath):
-    #目前沒反應
-    import urllib.request as ur
-    ur.urlretrieve(website, savePath)
 
 if __name__ == "__main__":
     solution_website(get_json())
